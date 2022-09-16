@@ -1,0 +1,50 @@
+.hero {
+  background-image: linear-gradient(
+      180deg,
+      #242b33 11.98%,
+      rgba(45, 52, 60, 0.38) 51.04%,
+      #242b33 92.19%
+    ),
+    url('../images/hero-banner.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  padding-top: 295px;
+  padding-bottom: 75px;
+
+  &__title {
+    margin-bottom: 100px;
+    max-width: 556px;
+
+    text-align: center;
+    @include font(700, 48px, 64px);
+    color: var(--accent-color);
+  }
+  &__btn {
+    background-color: rgba(36, 43, 51, 0);
+    margin-bottom: 200px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+
+    text-align: center;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    fill: currentColor;
+    color: var(--font-white-color);
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
