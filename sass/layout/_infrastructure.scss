@@ -1,0 +1,44 @@
+.infrastructure {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.infrastructure__container {
+  position: relative;
+}
+
+.latin-number {
+  position: absolute;
+  top: -80%;
+  right: -20%;
+
+  @include font(700, 400px, 533px);
+  font-family: 'Playfair Display', sans-serif;
+  color: var(--font-white-color);
+  opacity: 0.02;
+}
+.infrastructure__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 70px;
+}
+.infrastructure__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.infrastructure__icon {
+  margin-bottom: 50px;
+}
+
+.infrastructure__text {
+  text-align: center;
+
+  max-width: 190px;
+
+  font-family: 'Roboto', sans-serif;
+  @include font(300, 20px, 27px);
+
+  color: var(--font-white-color);
+}
