@@ -1,0 +1,25 @@
+.apartments {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.apartments__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .apartments__item {
+    position: relative;
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .apartments__text {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+
+    font-family: 'Raleway', sans-serif;
+    @include font(400, 24px, 28px);
+
+    color: var(--font-white-color);
+  }
+}

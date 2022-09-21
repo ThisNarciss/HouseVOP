@@ -1,0 +1,8 @@
+.section-title {
+  margin-bottom: 100px;
+
+  font-family: 'Playfair Display', sans-serif;
+  @include font(700, 36px, 48px);
+
+  color: var(--accent-color);
+}
