@@ -1,0 +1,16 @@
+.video-review {
+  padding-bottom: 0;
+  padding-top: 0;
+
+  text-align: center;
+}
+.video-review__movie {
+  position: relative;
+}
+.video-review__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}

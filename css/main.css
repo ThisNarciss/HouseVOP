@@ -63,7 +63,7 @@ svg {
 }
 
 .container {
-  max-width: 1110px;
+  width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -384,4 +384,22 @@ svg {
 
 .look-area-text-container {
   margin-right: 35px;
+}
+
+.video-review {
+  padding-bottom: 0;
+  padding-top: 0;
+  text-align: center;
+}
+
+.video-review__movie {
+  position: relative;
+}
+
+.video-review__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
 }/*# sourceMappingURL=main.css.map */
