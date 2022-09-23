@@ -8,9 +8,9 @@
     width: 255px;
     min-height: 50px;
     border: none;
+    color: var(--font-white-color);
 
-    background-color: var(--font-white-color);
-    opacity: 0.2;
+    background-color: var(--form-bgc);
   }
 
   &__input::placeholder {

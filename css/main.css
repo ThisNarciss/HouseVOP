@@ -3,6 +3,8 @@
   --font-white-color: #ffffff;
   --accent-color: #d4c17f;
   --placeholder-text-color: #bebebe;
+  --footer-bgc: #2d343c;
+  --form-bgc: #686868;
 }
 
 body {
@@ -114,8 +116,8 @@ svg {
   width: 255px;
   min-height: 50px;
   border: none;
-  background-color: var(--font-white-color);
-  opacity: 0.2;
+  color: var(--font-white-color);
+  background-color: var(--form-bgc);
 }
 .site-form__input::-moz-placeholder {
   font-weight: 400;
@@ -216,6 +218,10 @@ svg {
 }
 .site-nav__link:hover, .site-nav__link:focus {
   color: var(--accent-color);
+}
+
+.site-nav__link--padding {
+  padding: 0;
 }
 
 .hero {
@@ -437,4 +443,51 @@ svg {
 
 .question {
   padding-top: 0;
+}
+
+.footer {
+  background-color: var(--footer-bgc);
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.footer__site-nav {
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  margin-bottom: 20px;
+  font-style: normal;
+  color: var(--font-white-color);
+}
+.address__link {
+  transition: color 250ms linear;
+}
+.address__link:hover, .address__link:focus {
+  color: var(--accent-color);
+}
+
+.social-web {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.social-web__link {
+  transition: color 250ms linear;
+  color: var(--font-white-color);
+  fill: currentColor;
+}
+.social-web__link:hover, .social-web__link:focus {
+  color: var(--accent-color);
 }/*# sourceMappingURL=main.css.map */
