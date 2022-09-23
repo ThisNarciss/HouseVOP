@@ -1,0 +1,27 @@
+.latin-number {
+  position: absolute;
+  top: -80%;
+  right: -20%;
+
+  @include font(700, 400px, 533px);
+  font-family: 'Playfair Display', sans-serif;
+  color: var(--font-white-color);
+  opacity: 0.02;
+}
+
+.apartments__latin-number {
+  top: -7%;
+  left: -21%;
+  z-index: -1;
+}
+
+.video-review__latin-number {
+  top: 5%;
+  right: -19%;
+}
+
+.google-map__latin-number {
+  top: -10%;
+  left: -13%;
+  z-index: -1;
+}

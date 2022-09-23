@@ -2,6 +2,11 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+
+.apartments__container {
+  position: relative;
+  z-index: 1;
+}
 .apartments__list {
   display: flex;
   flex-wrap: wrap;

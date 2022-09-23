@@ -63,7 +63,7 @@ svg {
 }
 
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -72,6 +72,92 @@ svg {
   padding-top: 180px;
   padding-bottom: 180px;
   background-color: var(--site-bgc);
+}
+
+.latin-number {
+  position: absolute;
+  top: -80%;
+  right: -20%;
+  font-weight: 700;
+  font-size: 400px;
+  line-height: 1.3325;
+  font-family: "Playfair Display", sans-serif;
+  color: var(--font-white-color);
+  opacity: 0.02;
+}
+
+.apartments__latin-number {
+  top: -7%;
+  left: -21%;
+  z-index: -1;
+}
+
+.video-review__latin-number {
+  top: 5%;
+  right: -19%;
+}
+
+.google-map__latin-number {
+  top: -10%;
+  left: -13%;
+  z-index: -1;
+}
+
+.site-form {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 35px;
+}
+.site-form__input {
+  width: 255px;
+  min-height: 50px;
+  border: none;
+  background-color: var(--font-white-color);
+  opacity: 0.2;
+}
+.site-form__input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9285714286;
+  color: var(--placeholder-text-color);
+  text-align: center;
+}
+.site-form__input:-ms-input-placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9285714286;
+  color: var(--placeholder-text-color);
+  text-align: center;
+}
+.site-form__input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9285714286;
+  color: var(--placeholder-text-color);
+  text-align: center;
+}
+.site-form__text {
+  max-width: 255px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.2307692308;
+  color: #e7e7e7;
+}
+.site-form__btn {
+  transition: background-color 250ms linear;
+  width: 255px;
+  min-height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6875;
+  background-color: var(--accent-color);
+  color: var(--font-white-color);
+}
+.site-form__btn:hover, .site-form__btn:focus {
+  background-color: #a7944f;
 }
 
 .header {
@@ -226,18 +312,6 @@ svg {
   position: relative;
 }
 
-.latin-number {
-  position: absolute;
-  top: -80%;
-  right: -20%;
-  font-weight: 700;
-  font-size: 400px;
-  line-height: 1.3325;
-  font-family: "Playfair Display", sans-serif;
-  color: var(--font-white-color);
-  opacity: 0.02;
-}
-
 .infrastructure__list {
   display: flex;
   justify-content: center;
@@ -278,6 +352,11 @@ svg {
 .apartments {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.apartments__container {
+  position: relative;
+  z-index: 1;
 }
 
 .apartments__list {
@@ -325,63 +404,6 @@ svg {
   color: var(--font-white-color);
 }
 
-.site-form {
-  display: flex;
-  flex-wrap: wrap;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-  row-gap: 35px;
-}
-.site-form__input {
-  width: 255px;
-  min-height: 50px;
-  border: none;
-  background-color: var(--font-white-color);
-  opacity: 0.2;
-}
-.site-form__input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.9285714286;
-  color: var(--placeholder-text-color);
-  text-align: center;
-}
-.site-form__input:-ms-input-placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.9285714286;
-  color: var(--placeholder-text-color);
-  text-align: center;
-}
-.site-form__input::placeholder {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.9285714286;
-  color: var(--placeholder-text-color);
-  text-align: center;
-}
-.site-form__text {
-  max-width: 255px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 1.2307692308;
-  color: #e7e7e7;
-}
-.site-form__btn {
-  transition: background-color 250ms linear;
-  width: 255px;
-  min-height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6875;
-  background-color: var(--accent-color);
-  color: var(--font-white-color);
-}
-.site-form__btn:hover, .site-form__btn:focus {
-  background-color: #a7944f;
-}
-
 .look-area-text-container {
   margin-right: 35px;
 }
@@ -390,6 +412,10 @@ svg {
   padding-bottom: 0;
   padding-top: 0;
   text-align: center;
+}
+
+.video-review__container {
+  position: relative;
 }
 
 .video-review__movie {
@@ -402,4 +428,13 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+}
+
+.google-map__container {
+  position: relative;
+  z-index: 1;
+}
+
+.question {
+  padding-top: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -7,16 +7,6 @@
   position: relative;
 }
 
-.latin-number {
-  position: absolute;
-  top: -80%;
-  right: -20%;
-
-  @include font(700, 400px, 533px);
-  font-family: 'Playfair Display', sans-serif;
-  color: var(--font-white-color);
-  opacity: 0.02;
-}
 .infrastructure__list {
   display: flex;
   justify-content: center;

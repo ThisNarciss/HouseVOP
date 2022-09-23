@@ -1,0 +1,43 @@
+.site-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 35px;
+
+  &__input {
+    width: 255px;
+    min-height: 50px;
+    border: none;
+
+    background-color: var(--font-white-color);
+    opacity: 0.2;
+  }
+
+  &__input::placeholder {
+    @include font(400, 14px, 27px);
+    color: var(--placeholder-text-color);
+    text-align: center;
+  }
+  &__text {
+    max-width: 255px;
+    text-align: center;
+    @include font(400, 13px, 16px);
+    color: #e7e7e7;
+  }
+  &__btn {
+    transition: background-color 250ms linear;
+
+    width: 255px;
+    min-height: 50px;
+
+    @include font(700, 16px, 27px);
+
+    background-color: var(--accent-color);
+    color: var(--font-white-color);
+  }
+
+  &__btn:hover,
+  &__btn:focus {
+    background-color: #a7944f;
+  }
+}

@@ -4,6 +4,8 @@
 @import './utils/mixin';
 @import './components/container';
 @import './components/section';
+@import './components/latin-number';
+@import './components/site-form';
 @import './layout/header';
 @import './components/logo';
 @import './layout/site-nav';
@@ -13,3 +15,5 @@
 @import './layout/apartments';
 @import './layout/look-area';
 @import './layout/video-review';
+@import './layout/google-map';
+@import './layout/question';
