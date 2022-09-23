@@ -1,0 +1,16 @@
+.social-web {
+  display: flex;
+  column-gap: 20px;
+}
+
+.social-web__link {
+  transition: color 250ms linear;
+
+  color: var(--font-white-color);
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
